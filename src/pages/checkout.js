@@ -15,7 +15,7 @@ function CheckOut() {
         <div className='bg-gray-100 '>
             <Header />
 
-            <main className='lg:flex max-w-screen-2xl mx-auto  w-11/12 mx-auto bg-gray-100'>
+            <main className='lg:flex max-w-screen-2xl mx-auto  mx-auto bg-gray-100'>
                 <div className='flex-grow lg:w-2/3 flex-col m-5 shadow-md bg-white '>
                     <Image width={1020} height={250} objectFit="contain"  src='https://links.papareact.com/ikj'/>
                     <div className='flex flex-col p-5 bg-white space-y-10'>
