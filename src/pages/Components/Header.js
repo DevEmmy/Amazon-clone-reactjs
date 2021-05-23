@@ -16,7 +16,7 @@ function Header() {
        <header className='sticky top-0 z-50'>
 
            {/* Top Header */}
-           <div className='bg-amazon_blue w-100 h-auto flex-shrink flex flex-grow p-1 px-2 items-center  md:px-8'>
+           <div className='bg-amazon_blue w-full h-auto flex-shrink flex flex-grow p-1 px-2 items-center  md:px-8'>
                <div className='flex flex-grow sm:flex-grow mt-2 items-center'>
                     <Image 
                         src = 'https://links.papareact.com/f90'

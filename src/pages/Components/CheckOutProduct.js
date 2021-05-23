@@ -37,7 +37,7 @@ function CheckOutProduct({
         <div className='grid grid-cols-5'>
             <Image width={200} height={200} objectFit='contain' src={image}/>
 
-        <div className="col-span-3 mx-5">
+        <div className="col-span-3 mx-5 text-xs">
             <p>{ title } </p>
             <div className='flex'>
                 {Array(rating).fill().map((_, i)=>(
@@ -48,13 +48,13 @@ function CheckOutProduct({
                     }
             </div>
 
-            <p className='text-sm line-clamp-3 my-3'>{description}</p>
+            <p className='text-xs line-clamp-3 my-1'>{description}</p>
             <Currency quantity={price}/>
         </div>
 
-        <div className='flex text-sm md:lg flex-col my-auto mx-auto justify-self-end space-y-2'>
-        <button className='bg-gradient-to-b from-yellow-200 to-yellow-400 px-4 py-2 font-bold  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={addItemToBasket}>Add to Basket</button>
-        <button className='bg-gradient-to-b from-yellow-200 to-yellow-400 px-4 py-2 font-bold  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={removeItemFromBasket}>Remove from Basket</button>
+        <div className='flex text-xs md:lg flex-col my-auto mx-auto justify-self-end space-y-2 '>
+        <button className='bg-gradient-to-b from-yellow-200 to-yellow-400 px-4 py-2  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={addItemToBasket}>Add to Basket</button>
+        <button className='bg-gradient-to-b from-yellow-200 to-yellow-400 p-2  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={removeItemFromBasket}>Remove from Basket</button>
         </div>
 
 

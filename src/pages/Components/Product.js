@@ -40,11 +40,11 @@ function Product({ title, image, description, category, price, id }) {
             ))}
            </div>
 
-           <Currency quantity={price}  />
+           <Currency quantity={price} currency='GBP'/>
             
             <p className='text-xs my-2 line-clamp-2'>{ description }</p>
 
-            <button className='bg-gradient-to-b from-yellow-200 to-yellow-400 px-4 py-2 font-bold  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={addItemToBasket}>Add to Basket</button>
+            <button className='bg-gradient-to-b from-yellow-200 w-full hover:shadow-xl to-yellow-400 text-xs px-4 py-2 font-bold  text-black rounded text-center border-yellow-300 border focus:ring-2 focus:ring-500 focus:outline-none active:from-yellow-500' onClick={addItemToBasket}>Add to Basket</button>
         </div>
     )
 }
